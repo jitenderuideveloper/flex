@@ -37,3 +37,6 @@ h2{ margin-bottom: 0; }
 .flex-12>div:nth-child(3) { flex-grow: 1; flex-basis: 0px; flex-shrink: 0; order: 1; background: gold; /*flex: 1 0 0;*/ }
 .flex-12>div:nth-child(4) { flex-grow: 1; flex-basis: 0px; flex-shrink: 0; order: 3; background: hotpink; /*flex: 1 0 0;*/ }
 .flex-12>div:nth-child(5) { flex-grow: 1; flex-basis: 100%; flex-shrink: 1; order: 4; background: lightgreen; /*flex: 1 100%;*/ }
+
+.flex-13 { flex-wrap: wrap; height: 200px; width: 200px; align-items: center; }
+.flex-13-1 { display: flex; background: pink; flex-direction: column; }
