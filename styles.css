@@ -1,0 +1,39 @@
+h2{ margin-bottom: 0; }
+.container { background: grey; margin: 0 0 20px 0; display: flex; /* or inline-flex */ }
+.container>div{ background: darkgrey;}
+
+.flex-1 { } /* flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
+
+.flex-2{ flex-direction: column; /* row | row-reverse | column | column-reverse */ }
+
+.flex-3{ flex-wrap: wrap; width: 300px; /* nowrap | wrap | wrap-reverse */ }
+
+.flex-4{ flex-flow: column wrap; height: 80px; /*row nowrap*/ }
+
+.flex-5{ justify-content: space-evenly; /*flex-start | flex-end | center | space-between | space-around | space-evenly*/ }
+
+.flex-6{ align-items: center; flex-wrap: wrap; height: 200px; width: 200px; /*stretch | flex-start | flex-end | center | baseline*/ }
+
+.flex-7>div{ order: 2; }
+.flex-7>div:nth-child(2) { order: 1; background: green; }
+
+.flex-8>div{ flex-grow: 1;}
+.flex-8>div:nth-child(2) { flex-grow: 2; }
+.flex-8>div:nth-child(1) { width: 80px; flex-grow: 0; }
+
+.flex-9>div{ flex-shrink: 1;}
+.flex-9>div:nth-child(2) { flex-shrink: 2; }
+
+.flex-10{ flex-wrap: wrap; } 
+.flex-10>div:nth-child(1){ flex-basis: 100%; } /* <length> | auto; */
+
+.flex-11{ align-items: flex-start; flex-wrap: wrap; height: 200px; width: 200px; } /* auto | flex-start | flex-end | center | baseline | stretch; */
+.flex-11>div:nth-child(2) { align-self: flex-end; background: yellow; }
+
+
+.flex-12 { width: 800px; flex-wrap: wrap; text-align: center;}
+.flex-12>div:nth-child(1) { flex-grow: 1; flex-basis: 100%; flex-shrink: 1; background: tomato; /*flex: 1 100%;*/ }
+.flex-12>div:nth-child(2) { flex-grow: 3; flex-basis: 0px; flex-shrink: 1; order: 2; background: deepskyblue; /* flex: 3 0px; */ }
+.flex-12>div:nth-child(3) { flex-grow: 1; flex-basis: 0px; flex-shrink: 0; order: 1; background: gold; /*flex: 1 0 0;*/ }
+.flex-12>div:nth-child(4) { flex-grow: 1; flex-basis: 0px; flex-shrink: 0; order: 3; background: hotpink; /*flex: 1 0 0;*/ }
+.flex-12>div:nth-child(5) { flex-grow: 1; flex-basis: 100%; flex-shrink: 1; order: 4; background: lightgreen; /*flex: 1 100%;*/ }
